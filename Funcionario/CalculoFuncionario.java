@@ -9,7 +9,7 @@ import entities.ClasseFuncionario;
 public class CalculoFuncionario {
 	/**
 	 *@author: Diego_Lins
-	 *@Vers„o: 1.0
+	 *@Vers√£o: 1.0
 	 *TODO: Cadastra funcionarios, acrescenta porcentagem no salario e exibe dados atualizados..
 	*/
 	public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class CalculoFuncionario {
 		
 		List<ClasseFuncionario> list = new ArrayList<>();
 		
-		System.out.print("Quantos funcion·rios ser„o registrados? ");
+		System.out.print("Quantos funcion√°rios ser√£o registrados? ");
 		int quantidade = sc.nextInt();
 		
 		for(int i=1; i<=quantidade; i++) {
@@ -29,7 +29,7 @@ public class CalculoFuncionario {
 			System.out.print("Id: ");
 			int id = sc.nextInt();
 			while (hasId(list,id)) {
-				System.out.print("Id j· registrado. Tente novamente: ");
+				System.out.print("Id j√° registrado. Tente novamente: ");
 				id =sc.nextInt();
 			}
 			System.out.print("Nome: ");
@@ -40,11 +40,11 @@ public class CalculoFuncionario {
 			list.add(new ClasseFuncionario(id, nome, salario));
 		}
 		System.out.println();
-		System.out.print("Insira a id do funcion·rio que ter· aumento de sal·rio: ");
+		System.out.print("Insira a id do funcion√°rio que ter√° aumento de sal√°rio: ");
 		int id = sc.nextInt();
 		ClasseFuncionario funcionario = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 		if(funcionario == null) {
-			System.out.println("Este Id n„o existe!");
+			System.out.println("Este Id n√£o existe!");
 		}
 		else {
 			System.out.print("Digite a porcentagem: ");
