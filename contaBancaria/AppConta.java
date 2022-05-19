@@ -8,8 +8,8 @@ import entidades.Conta;
 public class AppConta {
 	/**
 	 *@author: Diego_Lins
-	 *@Versão: 1.0
-	 *TODO: Cadastro de conta bancaria + opcao de deposito e saque, com exibicação dos dados.
+	 *@VersÃ£o: 1.0
+	 *TODO: Cadastro de conta bancaria + opcao de deposito e saque, com exibicaÃ§Ã£o dos dados.
 	*/
 	public static void main(String[] args) {
 		
@@ -18,7 +18,7 @@ public class AppConta {
 		Conta conta = new Conta();
 		
 		System.out.println("------------CADASTRO------------");
-		System.out.print("Insira o número da conta: ");
+		System.out.print("Insira o nÃºmero da conta: ");
 		conta.numeroConta(sc.nextInt());
 		sc.nextLine();
 		System.out.print("Insira o titular da conta: ");
